@@ -108,11 +108,7 @@ font-family: 'Geometria'; /* Adını sadə saxla */
             transition: transform 0.5s ease;
         }
 
-        /* Card Image Zoom on Hover */
-        .layihe-card:hover img {
-            transform: scale(1.05);
-        }
-
+    
         /* Card Badge Capsule (Top Left) */
         .layihe-card .card-badge {
             position: absolute;
@@ -158,7 +154,6 @@ font-family: 'Geometria'; /* Adını sadə saxla */
             border-radius: 6px;
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
             font-size: 14px;
-            text-decoration: none;
             transition: background-color 0.3s ease;
         }
 
@@ -185,6 +180,132 @@ font-family: 'Geometria'; /* Adını sadə saxla */
             background-color: #8d2724;
             transform: translateY(-1px);
         }
+
+        /* MƏHSULLAR (Products) Section Custom CSS */
+        .mehsullar-section {
+            background-color: #f6f6f6; /* Light grey background like Image 1 */
+            padding: 60px 0;
+        }
+
+        .mehsul-grid {
+            display: grid;
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+            gap: 20px;
+        }
+
+        @media (min-width: 640px) {
+            .mehsul-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .mehsul-grid {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+            }
+        }
+
+        .mehsul-card {
+            position: relative;
+            height: 320px;
+            border-radius: 4px; /* Image 1 has very subtle rounding */
+            overflow: hidden;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            background-color: #ffffff;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .mehsul-card:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        /* Card Image */
+        .mehsul-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: transform 0.5s ease;
+        }
+
+    
+
+        /* Bottom Gradient Overlay */
+        .mehsul-card::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 60%;
+            background: linear-gradient(to top, #000000bf, rgba(43, 25, 25, 0));
+            z-index: 2;
+            transition: background 0.4s ease;
+        }
+
+        .mehsul-card:hover::before {
+            background: linear-gradient(to top, #2b1919, rgba(43, 25, 25, 0.5));
+            height: 100%;
+        }
+
+        /* Dark tint overlay on hover */
+        .mehsul-card::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(43, 25, 25, 0.15);
+            opacity: 0;
+            z-index: 3;
+            transition: opacity 0.4s ease;
+            pointer-events: none;
+        }
+
+        .mehsul-card:hover::after {
+            opacity: 1;
+        }
+
+        /* Bottom Bar */
+        .mehsul-card .mehsul-bottom-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 20px 16px 20px 16px;
+            z-index: 4;
+            transition: background-color 0.3s ease, z-index 0.3s ease;
+        }
+
+        .mehsul-card:hover .mehsul-bottom-bar {
+
+            z-index: 5; /* Sit above the hover card overlay */
+        }
+
+        /* Title */
+        .mehsul-card .mehsul-title {
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 1.3;
+            margin: 0;
+            font-family: inherit;
+        }
+
+        /* "Ətraflı" text */
+        .mehsul-card .mehsul-more {
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: 500;
+            opacity: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .mehsul-card:hover .mehsul-more {
+            opacity: 0.9;
+            max-height: 30px;
+            margin-top: 6px;
+        }
+
 
 
 
