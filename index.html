@@ -89,7 +89,7 @@
         </div>
     </header>
     <main>
-  <div class="swiper mySwiper ">
+  <div class="swiper mySwiper  ">
             <div class="swiper-wrapper  ">
 
                 <!-- Slide 1 — HVAC -->
@@ -332,6 +332,119 @@
             </div>
         </section>
 
+        <!-- LAYİHƏLƏR Bölməsi -->
+        <section class="layiheler-section">
+         
+            <div class="container px-[12px]">
+                <h2 class="layiheler-title">LAYİHƏLƏR</h2>
+                <div class="layiheler-container">
+                    <!-- Swiper Container -->
+                    <div class="swiper layihelerSwiper overflow-hidden">
+                        <div class="swiper-wrapper">
+                            <!-- Slide 1: Şamaxı Pirqulu Otel -->
+                            <div class="swiper-slide">
+                                <div class="layihe-card">
+                                    <img src="img/1724741495_nareksslider2.jpg" alt="Şamaxı Pirqulu Otel">
+                                    <div class="card-badge">
+                                        <span>Şamaxı Pirqulu Otel</span>
+                                    </div>
+                                    <div class="card-overlay">
+                                        <a href="/layiheler/davam_eden_layiheler/112_samax_pirgulu_otel.html" class="card-btn">Daha ətraflı</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Slide 2: Sabah Residence -->
+                            <div class="swiper-slide">
+                                <div class="layihe-card">
+                                    <img src="img/1707128672_sabah.jpeg" alt="Sabah Residence">
+                                    <div class="card-badge">
+                                        <span>Sabah Residence</span>
+                                    </div>
+                                    <div class="card-overlay">
+                                        <a href="" class="card-btn">Daha ətraflı</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Slide 3: Şeredil Hotel -->
+                            <div class="swiper-slide">
+                                <div class="layihe-card">
+                                    <img src="img/1707128871_seredil.jpeg" alt="Şeredil Hotel">
+                                    <div class="card-badge">
+                                        <span>Şeredil Hotel</span>
+                                    </div>
+                                    <div class="card-overlay">
+                                        <a href="" class="card-btn">Daha ətraflı</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Slide 4: Astara International Server -->
+                            <div class="swiper-slide">
+                                <div class="layihe-card">
+                                    <img src="img/1756489615_astara-dc.jpeg" alt="Astara International Server">
+                                    <div class="card-badge">
+                                        <span>Astara international Server</span>
+                                    </div>
+                                    <div class="card-overlay">
+                                        <a href="" class="card-btn">Daha ətraflı</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Slide 5: Delta Telecom -->
+                            <div class="swiper-slide">
+                                <div class="layihe-card">
+                                    <img src="img/1722943570_delta-telecom.jpg" alt="Delta Telecom">
+                                    <div class="card-badge">
+                                        <span>Delta Telecom</span>
+                                    </div>
+                                    <div class="card-overlay">
+                                        <a href="" class="card-btn">Daha ətraflı</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Slide 6: Hilton Hotel Baku -->
+                            <div class="swiper-slide">
+                                <div class="layihe-card">
+                                    <img src="img/1707129009_hilton.jpg" alt="Hilton Hotel Baku">
+                                    <div class="card-badge">
+                                        <span>Hilton Hotel Baku</span>
+                                    </div>
+                                    <div class="card-overlay">
+                                        <a href="" class="card-btn">Daha ətraflı</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Slide 7: Ağdam Sənaye Parkı -->
+                            <div class="swiper-slide">
+                                <div class="layihe-card">
+                                    <img src="img/1707129090_agdam.jpeg" alt="Ağdam Sənaye Parkı">
+                                    <div class="card-badge">
+                                        <span>Ağdam Sənaye Parkı</span>
+                                    </div>
+                                    <div class="card-overlay">
+                                        <a href="" class="card-btn">Daha ətraflı</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Progress Bar / Custom Pagination -->
+                    <div class="swiper-pagination layiheler-pagination"></div>
+                    
+                    <!-- Center Button -->
+                    <div class="flex justify-center mt-[10px]">
+                        <a href="" class="layiheler-btn">Bütün layihələrə bax</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- BLOQLAR Bölməsi -->
         <section class="py-[40px] bg-[#fdfdfd]">
             <div class="container px-[12px]">
@@ -520,6 +633,30 @@
                 640: { slidesPerView: 3 },
                 768: { slidesPerView: 4 },
                 1024: { slidesPerView: 5 }
+            }
+        });
+
+        let layihelerSwiper = new Swiper(".layihelerSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".layiheler-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 25,
+                }
             }
         });
     </script>
