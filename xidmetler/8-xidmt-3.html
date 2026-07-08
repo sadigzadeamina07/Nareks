@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layihənin idarə olunması - Nareks</title>
+
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../src/output.css">
+</head>
+
+<body class="font-geometria">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 shadow-md">
+        <div class="bg-[#f6f6f6] py-[10px]">
+            <div class="w-full mx-auto sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] 2xl:max-w-[1320px] px-[12px]">
+                <div class="hidden min-[1005px]:flex items-center justify-between gap-[30px]">
+                   <a href="../index.html"><img src="../img/nareks-logo.png" width="130" height="60" alt="Logo"></a>
+                    <div class="">
+                        <ul class="flex gap-[20px] text-[15px] text-[#323232]">
+                            <li class="hover:text-[#ad3330]"><a href="../index.html">Ana səhifə</a></li>
+                            <li class="hover:text-[#ad3330]"> <a href="#">Şirkət</a></li>
+                            <li class="hover:text-[#ad3330]"><a href="#">Məhsullar</a></li>
+                            <li class="hover:text-[#ad3330]"><a href="#">Xidmətlər</a></li>
+                            <li class="hover:text-[#ad3330]"><a href="#">Bloqlar</a></li>
+                            <li class="relative group hover:text-[#ad3330]">
+                                <a href="#">Layihələr</a>
+                                <ul class="absolute left-1/2 -translate-x-1/2 top-full pt-[10px] hidden group-hover:block z-50">
+                                    <div class="bg-white text-[#323232] shadow-[0_10px_30px_rgba(0,0,0,0.15)] rounded-[8px] py-[8px] w-[180px] border border-gray-100 text-left font-normal">
+                                        <li>
+                                            <a href="#" class="block px-[16px] py-[8px] text-[14px] text-gray-700 hover:text-[#ad3330] hover:bg-gray-50 duration-200">Davam edən layihələr</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block px-[16px] py-[8px] text-[14px] text-gray-700 hover:text-[#ad3330] hover:bg-gray-50 duration-200">Bitmiş layihələr</a>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </li>
+                            <li class="hover:text-[#ad3330]"><a href="#">Sertifikatlar</a></li>
+                            <li class="hover:text-[#ad3330]"><a href="#">Əlaqə</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="text-[11px] uppercase flex items-center text-white justify-center font-bold">
+                        <a href="#" class="w-[36px] h-[36px] bg-[#00000033] flex items-center justify-center ml-[10px] rounded-full">AZ</a>
+                        <a href="#" class="w-[36px] h-[36px] bg-[#00000022] flex items-center justify-center ml-[10px] rounded-full hover:bg-[#00000033]">En</a>
+                        <a href="#" class="w-[36px] h-[36px] bg-[#00000022] flex items-center justify-center ml-[10px] rounded-full hover:bg-[#00000033]">Tr</a>
+                    </div>
+                </div>
+
+                <div class="flex min-[1005px]:hidden items-center justify-between mt-[15px]">
+                    <div id="openMenuBtn" class="bg-[#e1e1e15e] w-[45px] h-[45px] flex items-center justify-center rounded-full cursor-pointer hover:bg-[#e1e1e18e] duration-200">
+                        <div class="w-[20px] h-fit">
+                            <div class="w-full h-[2px] bg-[#323232] my-[3px]"></div>
+                            <div class="w-full h-[2px] bg-[#323232] my-[3px]"></div>
+                            <div class="w-[80%] h-[2px] bg-[#323232] my-[3px]"></div>
+                        </div>
+                    </div>
+                    <a href="../index.html"><img src="../img/nareks-logo.png" class="w-[130px] h-fit" alt="Nareks logo"></a>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white py-[15px]">
+            <div class="w-full mx-auto sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] 2xl:max-w-[1320px] px-[12px]">
+                <div class="flex justify-between">
+                    <ul class="hidden min-[1005px]:flex text-[15px] items-center font-bold text-[#323232] gap-[20px]">
+                        <li class="hover:text-[#ad3330] duration-300"><a href="#">Satış sonrası xidmət</a></li>
+                        <li class="hover:text-[#ad3330] duration-300"><a href="#">Elektrik və mexaniki quraşdırma</a></li>
+                        <li class="hover:text-[#ad3330] duration-300"><a href="#">Layihənin idarə olunması</a></li>
+                    </ul>
+                    <div class="flex min-[1005px]:hidden text-[11px] uppercase items-center !text-white justify-center font-bold">
+                        <a href="#" class="uppercase w-[36px] h-[36px] bg-[#00000033] flex items-center justify-center ml-[10px] rounded-full">AZ</a>
+                        <a href="#" class="uppercase w-[36px] h-[36px] bg-[#00000022] flex items-center justify-center ml-[10px] hover:bg-[#00000033] rounded-full">En</a>
+                        <a href="#" class="uppercase w-[36px] h-[36px] bg-[#00000022] flex items-center justify-center ml-[10px] hover:bg-[#00000033] rounded-full">Tr</a>
+                    </div>
+                    <button class="p-[8px_15px] border border-[#0000001a] font-[500] text-[15px] duration-300 hover:border-[#ad3330] rounded-[25px]">
+                        <i class="fa-solid fa-share text-[#ad3330]"></i> Qiymət təklifi al
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="w-full mx-auto sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] 2xl:max-w-[1320px] px-[12px] py-[50px]">
+            
+            <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-[#e4e4e4] pb-[20px] mb-[40px] gap-4">
+                <h1 class="text-[26px] md:text-[28px] font-bold text-[#323232]">Layihənin idarə olunması</h1>
+                <div class="text-[14px] text-[#999] flex gap-[10px] items-center whitespace-nowrap">
+                    <a href="../index.html" class="hover:text-[#ad3330] transition-colors">Ana səhifə</a>
+                    <span><i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+                    <a href="#" class="hover:text-[#ad3330] transition-colors">Xidmətlər</a>
+                    <span><i class="fa-solid fa-arrow-right text-[10px]"></i></span>
+                    <span class="text-[#d1d1d1]">Layihənin idarə olunması</span>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-[40px] mb-[30px]">
+                <div class="w-full md:w-[45%] lg:w-[40%]">
+                    <img src="../img/1706517859_x4-min.webp" alt="Layihənin idarə olunması" class="w-full h-auto object-cover rounded-[4px] shadow-sm">
+                </div>
+                
+                <div class="w-full md:w-[55%] lg:w-[60%] text-[#444] text-[15px] leading-[1.8] flex flex-col gap-[20px]">
+                    <h3 class="text-[18px] font-bold text-[#323232]">Layihənin idarə olunması</h3>
+                    <p>“Layihənin idarə edilməsi xidməti” termini ümumiyyətlə layihənin bütün proseslərinin planlaşdırılması, əlaqələndirilməsi, həyata keçirilməsi, monitorinqi və idarə edilməsini özündə birləşdirən xidmətə aiddir. Bu xidmətə layihənin başlanğıcından tamamlanmasına qədər bir sıra idarəetmə fəaliyyətləri daxildir.</p>
+                    <p>Bu xidmətin əhatə dairəsinə aşağıdakılar daxil ola bilər:</p>
+                    <p>Layihənin Planlaşdırılması: Layihənin məqsədləri və əhatə dairəsinin müəyyən edilməsi, resursların bölüşdürülməsi, vaxt qrafiklərinin yaradılması və büdcənin müəyyən edilməsi kimi fəaliyyətlərin planlaşdırılması.</p>
+                    <p>Resursların İdarə Edilməsi: Əmək, maddi və maliyyə resurslarının səmərəli idarə edilməsi.</p>
+                    <p>Rabitə İdarəetmə: Layihə qrupu, maraqlı tərəflər və digər aidiyyəti tərəflər arasında effektiv ünsiyyətin təmin edilməsi.</p>
+                </div>
+            </div>
+            
+            <div class="text-[#444] text-[15px] leading-[1.8] flex flex-col gap-[20px]">
+                <p>Risklərin idarə edilməsi: Mümkün riskləri müəyyən etmək, təhlil etmək və onlara qarşı tədbirlər görmək.</p>
+                <p>Tərəqqinin Monitorinqi və Hesabatı: Layihənin gedişatının monitorinqi, müntəzəm hesabatların hazırlanması və maraqlı tərəflərə təqdim edilməsi.</p>
+                <p>Dəyişikliklərin İdarə Edilməsi: Layihə prosesində baş verən dəyişiklikləri müəyyən etmək, qiymətləndirmək və idarə etmək.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white">
+        <div class="w-full mx-auto sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] 2xl:max-w-[1320px] pt-[40px] pb-[30px] px-[12px]">
+            <div class="flex justify-between items-start sm:items-center gap-[20px] mb-[30px]">
+                <img src="../img/nareks-logo.png" class="w-[140px] h-auto object-contain" alt="Nareks logo">
+                <div class="flex items-center gap-[10px]">
+                    <a href="#" class="w-[34px] h-[34px] bg-white text-black rounded-full flex items-center justify-center hover:bg-[#ad3330] hover:text-white duration-300 text-[14px]">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="w-[34px] h-[34px] bg-white text-black rounded-full flex items-center justify-center hover:bg-[#ad3330] hover:text-white duration-300 text-[14px]">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="w-[34px] h-[34px] bg-white text-black rounded-full flex items-center justify-center hover:bg-[#ad3330] hover:text-white duration-300 text-[14px]">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-start gap-[20px] text-[#bdc6cf] text-[13px] mb-[30px]">
+                <div class="grid grid-cols-2 gap-x-[20px] gap-y-[20px] md:flex md:flex-wrap md:justify-between w-full md:w-[48%] lg:w-[40%] md:ml-[180px] lg:ml-[290px]">
+                    <ul class="flex flex-col gap-[8px]">
+                        <li><a href="../index.html" class="hover:text-white duration-300">Ana səhifə</a></li>
+                        <li><a href="#" class="hover:text-white duration-300">Şirkət</a></li>
+                        <li><a href="#" class="hover:text-white duration-300">Məhsullar</a></li>
+                    </ul>
+                    <ul class="flex flex-col gap-[8px]">
+                        <li><a href="#" class="hover:text-white duration-300">Xidmətlər</a></li>
+                        <li><a href="#" class="hover:text-white duration-300">Bloqlar</a></li>
+                        <li><a href="#" class="hover:text-white duration-300">Layihələr</a></li>
+                    </ul>
+                    <ul class="flex flex-col gap-[8px]">
+                        <li><a href="#" class="hover:text-white duration-300">Sertifikatlar</a></li>
+                        <li><a href="#" class="hover:text-white duration-300">Referanslar</a></li>
+                        <li><a href="#" class="hover:text-white duration-300">Əlaqə</a></li>
+                    </ul>
+
+                    <div class="flex flex-col gap-[10px] text-[14px] font-bold text-white md:hidden">
+                        <div class="flex items-center gap-[8px]">
+                            <i class="fa-solid fa-phone text-[#ad3330]"></i>
+                            <a href="tel:+994125115341" class="hover:text-[#ad3330] duration-300">+994 (12) 511 53 41</a>
+                        </div>
+                        <div class="flex items-center gap-[8px]">
+                            <i class="fa-solid fa-phone text-[#ad3330]"></i>
+                            <a target="_blank" href="#" class="hover:text-[#ad3330] duration-300">+90 (312) 418 28 81</a>
+                        </div>
+                        <div class="flex items-center gap-[8px] font-normal">
+                            <i class="fa-solid fa-envelope text-[#ad3330]"></i>
+                            <span class="text-[#bdc6cf]">Email</span>
+                            <a href="mailto:info@nareks.com" class="font-bold text-white hover:text-[#ad3330] duration-300">info@nareks.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden md:flex md:flex-col gap-[10px] text-[14px] font-bold text-white">
+                    <div class="flex items-center gap-[8px]">
+                        <i class="fa-solid fa-phone text-[#ad3330]"></i>
+                        <a href="tel:+994125115341" class="hover:text-[#ad3330] duration-300">+994 (12) 511 53 41</a>
+                    </div>
+                    <div class="flex items-center gap-[8px]">
+                        <i class="fa-solid fa-phone text-[#ad3330]"></i>
+                        <a target="_blank" href="#" class="hover:text-[#ad3330] duration-300">+90 (312) 418 28 81</a>
+                    </div>
+                    <div class="flex items-center gap-[8px] font-normal">
+                        <i class="fa-solid fa-envelope text-[#ad3330]"></i>
+                        <span class="text-[#bdc6cf]">Email</span>
+                        <a href="mailto:info@nareks.com" class="font-bold text-white hover:text-[#ad3330] duration-300">info@nareks.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative flex flex-col sm:flex-row justify-between items-center text-[13px] pt-[20px] gap-[15px]">
+                <p class="text-[#bdc6cf]">Copyright © 2026 Nareks.</p>
+                <div class="flex items-center gap-[8px] text-[#bdc6cf] sm:absolute sm:left-1/2 sm:-translate-x-1/2">
+                    <span>Site by</span>
+                    <img src="../img/oklogo.png" alt="okmedia" class="h-[20px] w-auto object-contain">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenuBackdrop" class="fixed inset-0 bg-black/60 z-50 hidden opacity-0 transition-opacity duration-300"></div>
+
+    <div id="mobileMenu" class="fixed md:hidden md:opacity-0 top-0 left-0 bottom-0 w-full overflow-y-hidden bg-[#2e2c2d] text-white z-50 -translate-x-full transition-transform duration-300 flex flex-col p-[30px_40px]">
+        <div class="flex justify-end">
+            <button id="closeMenuBtn" class="text-white hover:text-[#ad3330] duration-300 text-[26px] focus:outline-none cursor-pointer">
+                <img src="../img/close-menu.png" alt="Close Menu">
+            </button>
+        </div>
+        <nav class="mt-[30px]">
+            <ul class="flex flex-col gap-[20px] justify-center text-[17px] uppercase">
+                <li><a href="../index.html" class="hover:text-[#ad3330] duration-300 mt-[20px]">Ana Səhifə</a></li>
+                <li><a href="#" class="hover:text-[#ad3330] duration-300">Şirkət</a></li>
+                <li><a href="#" class="hover:text-[#ad3330] duration-300">Məhsullar</a></li>
+                <li><a href="#" class="hover:text-[#ad3330] duration-300">Xidmətlər</a></li>
+                <li><a href="#" class="hover:text-[#ad3330] duration-300">Bloqlar</a></li>
+                <li><a href="#" class="hover:text-[#ad3330] duration-300">Layihələr</a></li>
+                <li><a href="#" class="hover:text-[#ad3330] duration-300">Sertifikatlar</a></li>
+                <li><a href="#" class="hover:text-[#ad3330] duration-300">Referanslar</a></li>
+                <li><a href="#" class="hover:text-[#ad3330] duration-300 mb-[20px]">Əlaqə</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <script>
+        const openMenuBtn = document.getElementById('openMenuBtn');
+        const closeMenuBtn = document.getElementById('closeMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileMenuBackdrop = document.getElementById('mobileMenuBackdrop');
+
+        function toggleMenu(isOpen) {
+            if (isOpen) {
+                mobileMenuBackdrop.classList.remove('hidden');
+                setTimeout(() => {
+                    mobileMenuBackdrop.classList.add('opacity-100');
+                    mobileMenu.classList.remove('-translate-x-full');
+                }, 10);
+                document.body.style.overflow = 'hidden';
+            } else {
+                mobileMenu.classList.add('-translate-x-full');
+                mobileMenuBackdrop.classList.remove('opacity-100');
+                document.body.style.overflow = '';
+                setTimeout(() => {
+                    mobileMenuBackdrop.classList.add('hidden');
+                }, 300);
+            }
+        }
+
+        if (openMenuBtn && closeMenuBtn && mobileMenu && mobileMenuBackdrop) {
+            openMenuBtn.addEventListener('click', () => toggleMenu(true));
+            closeMenuBtn.addEventListener('click', () => toggleMenu(false));
+            mobileMenuBackdrop.addEventListener('click', () => toggleMenu(false));
+        }
+    </script>
+</body>
+</html>
