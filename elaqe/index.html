@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layihənin idarə olunması - Nareks</title>
+    <title>Əlaqə - Nareks</title>
 
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -27,7 +27,7 @@
                             <li class="hover:text-[#ad3330]"><a href="../index.html">Ana səhifə</a></li>
                             <li class="hover:text-[#ad3330]"> <a href="../haqqimizda/index.html">Şirkət</a></li>
                             <li class="hover:text-[#ad3330]"><a href="../mehsullar/index.html">Məhsullar</a></li>
-                            <li class="hover:text-[#ad3330]"><a href="./index.html">Xidmətlər</a></li>
+                            <li class="hover:text-[#ad3330]"><a href="../xidmetler/index.html">Xidmətlər</a></li>
                             <li class="hover:text-[#ad3330]"><a href="../bloqlar/index.html">Bloqlar</a></li>
                             <li class="relative group hover:text-[#ad3330]">
                                 <a href="#">Layihələr</a>
@@ -44,7 +44,7 @@
                             </li>
                             <li class="hover:text-[#ad3330]"><a href="../sertifikatlar/index.html">Sertifikatlar</a></li>
                             <li class="hover:text-[#ad3330]"><a href="../referanslar/index.html">Referanslar</a></li>
-                            <li class="hover:text-[#ad3330]"><a href="#">Əlaqə</a></li>
+                            <li class="hover:text-[#ad3330]"><a href="./index.html">Əlaqə</a></li>
                         </ul>
                     </div>
 
@@ -71,16 +71,16 @@
             <div class="w-full mx-auto sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] 2xl:max-w-[1320px] px-[12px]">
                 <div class="flex justify-between">
                     <ul class="hidden min-[1005px]:flex text-[15px] items-center font-bold text-[#323232] gap-[20px]">
-                        <li class="hover:text-[#ad3330] duration-300"><a href="./35-sat-sonrasi-xidmt.html">Satış sonrası xidmət</a></li>
-                        <li class="hover:text-[#ad3330] duration-300"><a href="./34-elektrik-v-mexaniki-qurasdirma.html">Elektrik və mexaniki quraşdırma</a></li>
-                        <li class="hover:text-[#ad3330] duration-300"><a href="./8-xidmt-3.html">Layihənin idarə olunması</a></li>
+                        <li class="hover:text-[#ad3330] duration-300"><a href="../xidmetler/35-sat-sonrasi-xidmt.html">Satış sonrası xidmət</a></li>
+                        <li class="hover:text-[#ad3330] duration-300"><a href="../xidmetler/34-elektrik-v-mexaniki-qurasdirma.html">Elektrik və mexaniki quraşdırma</a></li>
+                        <li class="hover:text-[#ad3330] duration-300"><a href="../xidmetler/8-xidmt-3.html">Layihənin idarə olunması</a></li>
                     </ul>
                     <div class="flex min-[1005px]:hidden text-[11px] uppercase items-center !text-white justify-center font-bold">
                         <a href="#" class="uppercase w-[36px] h-[36px] bg-[#00000033] flex items-center justify-center ml-[10px] rounded-full">AZ</a>
                         <a href="#" class="uppercase w-[36px] h-[36px] bg-[#00000022] flex items-center justify-center ml-[10px] hover:bg-[#00000033] rounded-full">En</a>
                         <a href="#" class="uppercase w-[36px] h-[36px] bg-[#00000022] flex items-center justify-center ml-[10px] hover:bg-[#00000033] rounded-full">Tr</a>
                     </div>
-                    <button class="p-[8px_15px] border border-[#0000001a] font-[500] text-[15px] duration-300 hover:border-[#ad3330] rounded-[25px]">
+                    <button id="headerOrderBtn" class="p-[8px_15px] border border-[#0000001a] font-[500] text-[15px] duration-300 hover:border-[#ad3330] rounded-[25px] cursor-pointer">
                         <i class="fa-solid fa-share text-[#ad3330]"></i> Qiymət təklifi al
                     </button>
                 </div>
@@ -89,38 +89,136 @@
     </header>
 
     <main>
-        <div class="w-full mx-auto sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] 2xl:max-w-[1320px] px-[12px] py-[50px]">
-            
-            <div class="flex flex-col md:flex-row md:items-center justify-between bg-[#f6f6f6]  pb-[20px] mb-[40px] gap-4">
-                <h1 class="text-[26px] md:text-[28px] font-bold text-[#323232]">Layihənin idarə olunması</h1>
+        <!-- Breadcrumb -->
+        <div class="w-full mx-auto sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] 2xl:max-w-[1320px] px-[12px] pt-[30px]">
+            <div class="flex flex-col md:flex-row md:items-center justify-between pb-[20px] gap-4">
+                <h1 class="text-[26px] md:text-[28px] font-bold text-[#323232]">Əlaqə</h1>
                 <div class="text-[14px] text-[#999] flex flex-wrap gap-[10px] items-center">
                     <a href="../index.html" class="hover:text-[#ad3330] transition-colors">Ana səhifə</a>
                     <span><i class="fa-solid fa-arrow-right text-[10px]"></i></span>
-                    <a href="#" class="hover:text-[#ad3330] transition-colors">Xidmətlər</a>
-                    <span><i class="fa-solid fa-arrow-right text-[10px]"></i></span>
-                    <span class="text-[#d1d1d1]">Layihənin idarə olunması</span>
+                    <span class="text-[#d1d1d1]">Əlaqə</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Google Maps Embed -->
+        <div class="w-full">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.4!2d49.85!3d40.38!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDIyJzQ4LjAiTiA0OcKwNTEnMDAuMCJF!5e0!3m2!1sen!2saz!4v1706000000000" 
+                width="100%" 
+                height="350" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <!-- Office Locations -->
+        <div class="w-full mx-auto sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] 2xl:max-w-[1320px] px-[12px] py-[40px]">
+            
+            <!-- Baku Office -->
+            <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-[20px] pb-[25px] mb-[25px] border-b border-gray-200">
+                <div class="flex-1">
+                    <h2 class="text-[18px] md:text-[20px] font-bold text-[#323232] uppercase tracking-wide">BAKI/AZƏRBAYCAN</h2>
+                    <div class="flex items-start gap-[8px] mt-[8px] text-[13px] text-[#666]">
+                        <i class="fa-solid fa-location-dot text-[#ad3330] mt-[3px]"></i>
+                        <span>Əhməd Rəcəbli 896, Bakı, AZƏRBAYCAN</span>
+                    </div>
+                </div>
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-[15px] sm:gap-[40px]">
+                    <div class="flex items-center gap-[8px] text-[13px]">
+                        <i class="fa-solid fa-phone text-[#ad3330]"></i>
+                        <a href="tel:+994125115341" class="text-[#323232] hover:text-[#ad3330] duration-300">+994 (12) 511 53 41</a>
+                    </div>
+                    <div class="flex items-center gap-[8px] text-[13px]">
+                        <i class="fa-solid fa-envelope text-[#ad3330]"></i>
+                        <a href="mailto:info@nareks.com" class="text-[#323232] hover:text-[#ad3330] duration-300">info@nareks.com</a>
+                    </div>
+                </div>
+                <div class="hidden lg:block">
+                    <img src="../img/1724668469_yavuz.jpg" alt="Bakı ofis" class="w-[70px] h-[70px] rounded-[8px] object-cover">
                 </div>
             </div>
 
-            <div class="flex flex-col md:flex-row gap-[40px] mb-[30px]">
-                <div class="w-full mr-[20px] md:w-[65%] ">
-                    <img src="../img/1706517859_x4-min.webp" alt="Layihənin idarə olunması" class="w-full h-[400px] object-cover shadow-sm">
+            <!-- Ankara Office -->
+            <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-[20px] pb-[25px] mb-[30px] border-b border-gray-200">
+                <div class="flex-1">
+                    <h2 class="text-[18px] md:text-[20px] font-bold text-[#323232] uppercase tracking-wide">ANKARA/TÜRKİYƏ</h2>
+                    <div class="flex items-start gap-[8px] mt-[8px] text-[13px] text-[#666]">
+                        <i class="fa-solid fa-location-dot text-[#ad3330] mt-[3px]"></i>
+                        <span>Cetin 109 , A.T.G. 854 Çankaya</span>
+                    </div>
                 </div>
-                
-                <div class="w-full md:w-[55%] lg:w-[60%] text-[#444] text-[15px] leading-[1.8] flex flex-col gap-[20px]">
-                    <h3 class="text-[18px] font-bold text-[#323232]">Layihənin idarə olunması</h3>
-                    <p>“Layihənin idarə edilməsi xidməti” termini ümumiyyətlə layihənin bütün proseslərinin planlaşdırılması, əlaqələndirilməsi, həyata keçirilməsi, monitorinqi və idarə edilməsini özündə birləşdirən xidmətə aiddir. Bu xidmətə layihənin başlanğıcından tamamlanmasına qədər bir sıra idarəetmə fəaliyyətləri daxildir.</p>
-                    <p>Bu xidmətin əhatə dairəsinə aşağıdakılar daxil ola bilər:</p>
-                    <p>Layihənin Planlaşdırılması: Layihənin məqsədləri və əhatə dairəsinin müəyyən edilməsi, resursların bölüşdürülməsi, vaxt qrafiklərinin yaradılması və büdcənin müəyyən edilməsi kimi fəaliyyətlərin planlaşdırılması.</p>
-                    <p>Resursların İdarə Edilməsi: Əmək, maddi və maliyyə resurslarının səmərəli idarə edilməsi.</p>
-                    <p>Rabitə İdarəetmə: Layihə qrupu, maraqlı tərəflər və digər aidiyyəti tərəflər arasında effektiv ünsiyyətin təmin edilməsi.</p>
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-[15px] sm:gap-[40px]">
+                    <div class="flex items-center gap-[8px] text-[13px]">
+                        <i class="fa-solid fa-phone text-[#ad3330]"></i>
+                        <a href="tel:+903124182881" class="text-[#323232] hover:text-[#ad3330] duration-300">+90 (312) 418 28 81</a>
+                    </div>
+                    <div class="flex items-center gap-[8px] text-[13px]">
+                        <i class="fa-solid fa-envelope text-[#ad3330]"></i>
+                        <a href="mailto:info@nareks.com" class="text-[#323232] hover:text-[#ad3330] duration-300">info@nareks.com</a>
+                    </div>
+                </div>
+                <div class="hidden lg:block">
+                    <img src="../img/1724668469_yavuz.jpg" alt="Ankara ofis" class="w-[70px] h-[70px] rounded-[8px] object-cover">
                 </div>
             </div>
-            
-            <div class="text-[#444] text-[15px] flex flex-col gap-[20px]">
-                <p>Risklərin idarə edilməsi: Mümkün riskləri müəyyən etmək, təhlil etmək və onlara qarşı tədbirlər görmək.</p>
-                <p>Tərəqqinin Monitorinqi və Hesabatı: Layihənin gedişatının monitorinqi, müntəzəm hesabatların hazırlanması və maraqlı tərəflərə təqdim edilməsi.</p>
-                <p>Dəyişikliklərin İdarə Edilməsi: Layihə prosesində baş verən dəyişiklikləri müəyyən etmək, qiymətləndirmək və idarə etmək.</p>
+
+            <!-- Contact Persons -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-[20px] pb-[40px] mb-[40px] border-b border-gray-200">
+                <div class="text-center">
+                    <p class="text-[13px] font-bold text-[#323232]">Nareks sirkəti, Satışdan məsul</p>
+                    <div class="flex items-center justify-center gap-[6px] mt-[6px]">
+                        <i class="fa-solid fa-envelope text-[#ad3330] text-[11px]"></i>
+                        <a href="mailto:sales@nareksautomation.com" class="text-[12px] text-[#ad3330] hover:underline">sales@nareksautomation.com</a>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <p class="text-[13px] font-bold text-[#323232]">Satış bölməsi, Əvəz Qaribov</p>
+                    <div class="flex items-center justify-center gap-[6px] mt-[6px]">
+                        <i class="fa-solid fa-envelope text-[#ad3330] text-[11px]"></i>
+                        <a href="mailto:a.e.v.a.z@nareks.com" class="text-[12px] text-[#ad3330] hover:underline">a.e.v.a.z@nareks.com</a>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <p class="text-[13px] font-bold text-[#323232]">Muhasibatlıq, İzahra Üstədova</p>
+                    <div class="flex items-center justify-center gap-[6px] mt-[6px]">
+                        <i class="fa-solid fa-envelope text-[#ad3330] text-[11px]"></i>
+                        <a href="mailto:izahra@nareks.com" class="text-[12px] text-[#ad3330] hover:underline">izahra@nareks.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="max-w-[600px] mx-auto pb-[20px]">
+                <h3 class="text-[18px] md:text-[20px] font-bold text-[#323232] text-center mb-[25px] flex items-center justify-center gap-[10px]">
+                    <i class="fa-regular fa-address-book text-[#ad3330]"></i> Əlaqə formu
+                </h3>
+                <form id="contactForm" class="flex flex-col gap-[15px]">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-[15px]">
+                        <input type="text" placeholder="Ad, Soyad" class="border border-gray-300 rounded-[4px] px-[14px] py-[10px] text-[14px] text-[#323232] outline-none focus:border-[#ad3330] duration-300">
+                        <input type="text" placeholder="Telefon nömrəsi" class="border border-gray-300 rounded-[4px] px-[14px] py-[10px] text-[14px] text-[#323232] outline-none focus:border-[#ad3330] duration-300">
+                    </div>
+                    <textarea placeholder="Mesajınız..." rows="5" class="border border-gray-300 rounded-[4px] px-[14px] py-[10px] text-[14px] text-[#323232] outline-none focus:border-[#ad3330] duration-300 resize-y"></textarea>
+                    <div class="flex justify-end">
+                        <button type="submit" class="bg-[#ad3330] text-white px-[35px] py-[10px] rounded-[4px] text-[14px] font-bold hover:bg-[#8b2826] duration-300 cursor-pointer">
+                            Göndər
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="py-[40px] text-white" style="background-image: linear-gradient(to right, #ad3330, #000);">
+            <div class="w-full cta-zoom-in mx-auto sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] 2xl:max-w-[1320px] text-center px-[12px]">
+                <h2 class="pb-[22px] text-[24px] md:text-[32px] font-normal">Xidmətlərimizlə bağlı sualınız varsa, icazə
+                    verin sizə zəng edək!</h2>
+                <button id="ctaOrderBtn"
+                    class="w-[220px] p-[14px_20px] bg-white text-[#2d3640] hover:bg-transparent hover:text-white border border-white duration-300 text-[18px] md:text-[20px] cursor-pointer rounded-[4px]">
+                    Zəng sifarişi et
+                </button>
             </div>
         </div>
     </main>
@@ -151,14 +249,14 @@
                         <li><a href="../mehsullar/index.html" class="hover:text-white duration-300">Məhsullar</a></li>
                     </ul>
                     <ul class="flex flex-col gap-[8px]">
-                        <li><a href="./index.html" class="hover:text-white duration-300">Xidmətlər</a></li>
+                        <li><a href="../xidmetler/index.html" class="hover:text-white duration-300">Xidmətlər</a></li>
                         <li><a href="../bloqlar/index.html" class="hover:text-white duration-300">Bloqlar</a></li>
                         <li><a href="#" class="hover:text-white duration-300">Layihələr</a></li>
                     </ul>
                     <ul class="flex flex-col gap-[8px]">
                         <li><a href="../sertifikatlar/index.html" class="hover:text-white duration-300">Sertifikatlar</a></li>
                         <li><a href="../referanslar/index.html" class="hover:text-white duration-300">Referanslar</a></li>
-                        <li><a href="#" class="hover:text-white duration-300">Əlaqə</a></li>
+                        <li><a href="./index.html" class="hover:text-white duration-300">Əlaqə</a></li>
                     </ul>
 
                     <div class="flex flex-col gap-[10px] text-[14px] font-bold text-white md:hidden">
@@ -205,6 +303,34 @@
         </div>
     </footer>
 
+    <!-- Zəng sifarişi Modal -->
+    <div id="callModalBackdrop" class="fixed inset-0 bg-black/50 z-[100] hidden opacity-0 transition-opacity duration-300 flex items-center justify-center">
+        <div id="callModal" class="bg-white rounded-[8px] w-[90%] max-w-[500px] p-[30px_35px] relative scale-95 opacity-0 transition-all duration-300">
+            <div class="flex items-center justify-between mb-[20px]">
+                <h3 class="text-[20px] font-bold text-[#323232]">Zəng sifarişi</h3>
+                <button id="closeModalBtn" class="text-gray-400 hover:text-[#323232] duration-200 text-[22px] cursor-pointer">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <hr class="border-gray-200 mb-[20px]">
+            <form id="callForm" class="flex flex-col gap-[15px]">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-[15px]">
+                    <div>
+                        <label class="text-[13px] text-[#323232] font-[500] mb-[5px] block">Ad soyad: <span class="text-[#ad3330]">*</span></label>
+                        <input type="text" required class="w-full border border-gray-300 rounded-[4px] px-[12px] py-[10px] text-[14px] text-[#323232] outline-none focus:border-[#ad3330] duration-300">
+                    </div>
+                    <div>
+                        <label class="text-[13px] text-[#323232] font-[500] mb-[5px] block">Telefon: <span class="text-[#ad3330]">*</span></label>
+                        <input type="tel" required class="w-full border border-gray-300 rounded-[4px] px-[12px] py-[10px] text-[14px] text-[#323232] outline-none focus:border-[#ad3330] duration-300">
+                    </div>
+                </div>
+                <button type="submit" class="bg-[#ad3330] text-white px-[30px] py-[12px] rounded-[4px] text-[15px] font-bold hover:bg-[#8b2826] duration-300 cursor-pointer self-start mt-[5px]">
+                    Göndər
+                </button>
+            </form>
+        </div>
+    </div>
+
     <!-- Mobile Menu -->
     <div id="mobileMenuBackdrop" class="fixed inset-0 bg-black/60 z-50 hidden opacity-0 transition-opacity duration-300"></div>
 
@@ -219,17 +345,18 @@
                 <li><a href="../index.html" class="hover:text-[#ad3330] duration-300 mt-[20px]">Ana Səhifə</a></li>
                 <li><a href="../haqqimizda/index.html" class="hover:text-[#ad3330] duration-300">Şirkət</a></li>
                 <li><a href="../mehsullar/index.html" class="hover:text-[#ad3330] duration-300">Məhsullar</a></li>
-                <li><a href="./index.html" class="hover:text-[#ad3330] duration-300">Xidmətlər</a></li>
+                <li><a href="../xidmetler/index.html" class="hover:text-[#ad3330] duration-300">Xidmətlər</a></li>
                 <li><a href="../bloqlar/index.html" class="hover:text-[#ad3330] duration-300">Bloqlar</a></li>
                 <li><a href="../davam-eden-layiheler/index.html" class="hover:text-[#ad3330] duration-300">Layihələr</a></li>
                 <li><a href="../sertifikatlar/index.html" class="hover:text-[#ad3330] duration-300">Sertifikatlar</a></li>
                 <li><a href="../referanslar/index.html" class="hover:text-[#ad3330] duration-300">Referanslar</a></li>
-                <li><a href="#" class="hover:text-[#ad3330] duration-300 mb-[20px]">Əlaqə</a></li>
+                <li><a href="./index.html" class="hover:text-[#ad3330] duration-300 mb-[20px]">Əlaqə</a></li>
             </ul>
         </nav>
     </div>
 
     <script>
+        // Mobile menu toggle
         const openMenuBtn = document.getElementById('openMenuBtn');
         const closeMenuBtn = document.getElementById('closeMenuBtn');
         const mobileMenu = document.getElementById('mobileMenu');
@@ -258,6 +385,49 @@
             closeMenuBtn.addEventListener('click', () => toggleMenu(false));
             mobileMenuBackdrop.addEventListener('click', () => toggleMenu(false));
         }
+
+        // Zəng sifarişi Modal logic
+        const callModalBackdrop = document.getElementById('callModalBackdrop');
+        const callModal = document.getElementById('callModal');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+        const ctaOrderBtn = document.getElementById('ctaOrderBtn');
+        const headerOrderBtn = document.getElementById('headerOrderBtn');
+
+        function openModal() {
+            callModalBackdrop.classList.remove('hidden');
+            setTimeout(() => {
+                callModalBackdrop.classList.add('opacity-100');
+                callModal.classList.remove('scale-95', 'opacity-0');
+                callModal.classList.add('scale-100', 'opacity-100');
+            }, 10);
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            callModal.classList.remove('scale-100', 'opacity-100');
+            callModal.classList.add('scale-95', 'opacity-0');
+            callModalBackdrop.classList.remove('opacity-100');
+            document.body.style.overflow = '';
+            setTimeout(() => {
+                callModalBackdrop.classList.add('hidden');
+            }, 300);
+        }
+
+        if (ctaOrderBtn) ctaOrderBtn.addEventListener('click', openModal);
+        if (headerOrderBtn) headerOrderBtn.addEventListener('click', openModal);
+        if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
+        if (callModalBackdrop) {
+            callModalBackdrop.addEventListener('click', (e) => {
+                if (e.target === callModalBackdrop) closeModal();
+            });
+        }
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !callModalBackdrop.classList.contains('hidden')) {
+                closeModal();
+            }
+        });
     </script>
 </body>
 </html>
